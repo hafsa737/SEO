@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kitabi Dunya - A world of books! Explore our library, reviews, and order your favorite books.">
+    <meta name="keywords" content="books, library, book reviews, Kitabi Dunya">
+    <meta name="author" content="Kitabi Dunya">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "your-site-url"
+            },
+            "headline": "Your Blog Title",
+            "description": "Your blog description here with primary keyword",
+            "image": "your-image-url.jpg",
+            "author": {
+                "@type": "Person",
+                "name": "Your Name"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Your Blog Name",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "your-logo-url.jpg"
+                }
+            },
+            "datePublished": "2025-02-28",
+            "dateModified": "2025-02-28"
+        }
+        </script>
+    <title>Kitabi Duniya - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f1ea;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #3b2f2f;
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .carousel {
+            margin: 20px auto;
+            padding: 20px;
+            background: #d1b899;
+        }
+
+        .slide {
+            display: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .featured {
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .book-card {
+            background: white;
+            padding: 10px;
+            height: 100px;
+            margin: 7px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        footer {
+            background: #3b2f2f;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+
+        .featured {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .featured h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: white;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        .card-body {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card .btn {
+            background-color: rgb(110, 63, 63);
+            color: white;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            transition: 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .card .btn:hover {
+            background-color: brown;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                gap: 10px;
+            }
+
+            .card {
+                width: 90%;
+            }
+
+            .card img {
+                height: 220px;
+            }
+        }
+
+        .contact {
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+
+        .contact .heading {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .contact .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 20px;
+        }
+
+        .contact-form .box {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form .btn {
+            background-color: rgb(110, 63, 63);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact-form .btn:hover {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kitabi Duniya</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Order Books</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <div class="slide">📚 Welcome to Kitabi Dunya!</div>
+        <div class="slide">📖 Discover New Books</div>
+        <div class="slide">⭐ Read and Share Reviews</div>
+    </section>
+
+    <section class="featured container my-5">
+        <h2 class="text-center mb-4">Featured Books</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://play-lh.googleusercontent.com/bEQfZZOolK1u1LzmUSA4xLi9EqywEsxp0gQ7-U8TBCjUX0ePEE6SZ7lwMZCC8E9n_88E=w240-h480-rw"
+                        class="card-img-top img-fluid" alt="Peer-e-Kamil">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Peer-e-Kamil</h5>
+                        <p class="card-text">Author: Umera Ahmed</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://cdn.shopify.com/s/files/1/0642/1007/5809/files/2.jpg?v=1727086758"
+                        class="card-img-top img-fluid" alt="Jannat K Patty">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jannat K Patty</h5>
+                        <p class="card-text">Author: Nimra Ahmed</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://tehzibsons.com/wp-content/uploads/2024/06/Namal-Urdu-Novel-Complete-Book-by-Nimra-Ahmed-Hard-Cover.webp"
+                        class="card-img-top img-fluid" alt="Namal">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Namal</h5>
+                        <p class="card-text">Author: Nimra Ahmed</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.clankart.com/user-uploads/advert/Aabehayat1719932589475.jpg"
+                        class="card-img-top img-fluid" alt="Aab Hayat">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Aab Hayat</h5>
+                        <p class="card-text">Author: Umera Ahmed</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://img.drz.lazcdn.com/static/pk/p/c421fe0e7269642b1c1879ea64f9fb6b.jpg_720x720q80.jpg"
+                        class="card-img-top img-fluid" alt="Aram Bail">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Aram Bail</h5>
+                        <p class="card-text">Author: Umera Ahmed</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8NI5nXSfA7WVJyFcszzF1IA1EcHmEbrIV_AISs7n0YLb8uTIxYCQaiHJhvaZ19CmTcm4&usqp=CAU"
+                        class="card-img-top img-fluid" alt="Rooh-E-Yaram">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rooh-E-Yaram</h5>
+                        <p class="card-text">Author: Areej Shah</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://war.org.pk/wp-content/uploads/2022/10/Fathers-and-Sons-Baap-aur-Bety-By-Anwar-Azeem-Urdu-Novel-144760-1-690x1076.jpg"
+                        class="card-img-top img-fluid" alt="Father and Son">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Father and Son</h5>
+                        <p class="card-text">Author: Anwar Azeem</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://i.pinimg.com/236x/0a/39/18/0a39189a39f5109289fd2a130699d8c8.jpg"
+                        class="card-img-top img-fluid" alt="Ishq Atish">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ishq Atish</h5>
+                        <p class="card-text">Author: Sadia Rajpoot</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://karachistationers.com/cdn/shop/files/197863.jpg?v=1731066276"
+                        class="card-img-top img-fluid" alt="Azazeel">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Azazeel</h5>
+                        <p class="card-text">Author: Rabia Khan</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.pakbooks.com/cdn/shop/products/cbf471f81062b4732e64a7d1d793fcff.jpg?v=1592977964"
+                        class="card-img-top img-fluid" alt="Alif">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Alif</h5>
+                        <p class="card-text">Author: Umera Ahmed</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://leyjao.pk/images/thumbnails/1467/1200/detailed/375/1583003cc58d95f86ca0a49ee147057e.jpg"
+                        class="card-img-top img-fluid" alt="Haalim">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Haalim</h5>
+                        <p class="card-text">Author: Nimra Ahmed</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://kradoretail.com/wp-content/uploads/2025/01/Wajbaat-E-Ishq-800-x-800-px.png"
+                        class="card-img-top img-fluid" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Wajbaat-E-Ishq </h5>
+                        <p class="card-text">Author: Mahreen Saeed</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contact Us</span></h1>
+        <div class="row">
+            <form action="" class="contact-form">
+                <input type="text" placeholder="Name" class="box"><br>
+                <input type="email" placeholder="Email" class="box"><br>
+                <input type="tel" placeholder="Phone Number" class="box"><br>
+                <textarea class="box" placeholder="Your Message" cols="30" rows="10"></textarea><br>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 Kitabi Dunya | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let slides = document.querySelectorAll(".slide");
+            let index = 0;
+
+            function showSlide() {
+                slides.forEach((slide, i) => {
+                    slide.style.display = i === index ? "block" : "none";
+                });
+                index = (index + 1) % slides.length;
+            }
+
+            setInterval(showSlide, 3000);
+            showSlide();
+        });
+    </script>
+
+</body>
+
+</html>
